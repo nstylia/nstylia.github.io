@@ -84,10 +84,10 @@
       <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
     {% endif %}
     {% if entry.arxiv %}
-      <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="far fa-link"> LINK</i></a>
+      <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="fas fa-link"> Link</i></a>
     {% endif %}
     {% if entry.html %}
-      <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="far fa-link"> LINK</i></a>
+      <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="fas fa-link"> Link</i></a>
     {% endif %}
     {% if entry.pdf %}
       {% if entry.pdf contains '://' %}
@@ -105,10 +105,10 @@
       {% endif %}
     {% endif %}
     {% if entry.blog %}
-      <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button" target="_blank"> Blog</a>
+      <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="fas fa-th"> Blog</i></a>
     {% endif %}
     {% if entry.code %}
-      <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="far fa-code"> Code</i></a>
+      <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="fas fa-code"> Code</i></a>
     {% endif %}
     {% if entry.poster %}
       {% if entry.poster contains '://' %}
@@ -119,9 +119,9 @@
     {% endif %}
     {% if entry.slides %}
       {% if entry.slides contains '://' %}
-      <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="far fa-presentation"> Slides</i></a>
+      <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="far fa-file-powerpoint">Slides</i></a>
       {% else %}
-      <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="far fa-presentation"> Slides</i></a>
+      <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="far fa-file-powerpoint">Slides</i></a>
       {% endif %}
     {% endif %}
     {% if entry.website %}
