@@ -1,3 +1,23 @@
+"Vlahavas":
+  - firstname: ["Ioannis", "I.", ]
+    url: https://intelligence.csd.auth.gr/people/vlahavas/
+
+"Kosmoliaptsis":
+  - firstname: ["Panagiotis", "P.", ]
+    url: https://gr.linkedin.com/in/panagiotis-panos-kosmoliaptsis-704444152
+
+"Razis":
+  - firstname: ["Gerasimos", "G."]
+    url: https://scholar.google.gr/citations?user=qahWPiQAAAAJ&hl=en&oi=ao 
+
+"Goulis":
+  - firstname: ["Dimitrios G.", "D. G."]
+    url: https://scholar.google.gr/citations?user=uEvehZwAAAAJ&hl=en&oi=ao
+
+"Michailidis":
+  - firstname: ["Dimitrios", "D."]
+    url: https://github.com/dimichai
+
 "Adams":
   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
     url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
