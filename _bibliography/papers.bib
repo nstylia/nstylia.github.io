@@ -1,3 +1,15 @@
+
+
+@inproceedings{Stylianou2021longseq,
+title = {Improved Biomedical Entity Recognition via longer context modeling},
+author = {Stylianou, Nikolaos, and Kosmoliaptsis, Panagiotis, and Vlahavas, Ioannis},
+booktitle = "IFIP International Conference on Artificial Intelligence Applications and Innovations 2021.",
+year = {2021},
+code = {https://github.com/AUTH-MINT/LongSeq},
+html = {},
+pdf = {https://nstylia.github.io/assets/pdf/LongSeq_AIAI2021_CameraReady.pdf},
+}
+
 @article{STYLIANOU2021103767,
 title = {TransforMED: End-to-Εnd Transformers for Evidence-Based Medicine and Argument Mining in medical literature},
 journal = {Journal of Biomedical Informatics},
@@ -9,7 +21,9 @@ doi = {https://doi.org/10.1016/j.jbi.2021.103767},
 url = {https://www.sciencedirect.com/science/article/pii/S1532046421000964},
 author = {Nikolaos Stylianou and Ioannis Vlahavas},
 keywords = {Deep learning, Natural language processing, Evidence based medicine, Argument mining},
-abstract = {Argument Mining (AM) refers to the task of automatically identifying arguments in a text and finding their relations. In medical literature this is done by identifying Claims and Premises and classifying their relations as either Support or Attack. Evidence-Based Medicine (EBM) refers to the task of identifying all related evidence in medical literature to allow medical practitioners to make informed choices and form accurate treatment plans. This is achieved through the automatic identification of Population, Intervention, Comparator and Outcome entities (PICO) in the literature to limit the collection to only the most relevant documents. In this work, we combine EBM with AM in medical literature to increase the performance of the individual models and create high quality argument graphs, annotated with PICO entities. To that end, we introduce a state-of-the-art EBM model, used to predict the PICO entities and two novel Argument Identification and Argument Relation classification models that utilize the PICO entities to enhance their performance. Our final system works in a pipeline and is able to identify all PICO entities in a medical publication, the arguments presented in them and their relations.}
+abstract = {Argument Mining (AM) refers to the task of automatically identifying arguments in a text and finding their relations. In medical literature this is done by identifying Claims and Premises and classifying their relations as either Support or Attack. Evidence-Based Medicine (EBM) refers to the task of identifying all related evidence in medical literature to allow medical practitioners to make informed choices and form accurate treatment plans. This is achieved through the automatic identification of Population, Intervention, Comparator and Outcome entities (PICO) in the literature to limit the collection to only the most relevant documents. In this work, we combine EBM with AM in medical literature to increase the performance of the individual models and create high quality argument graphs, annotated with PICO entities. To that end, we introduce a state-of-the-art EBM model, used to predict the PICO entities and two novel Argument Identification and Argument Relation classification models that utilize the PICO entities to enhance their performance. Our final system works in a pipeline and is able to identify all PICO entities in a medical publication, the arguments presented in them and their relations.},
+code = {https://github.com/nstylia/TransforMED/},
+html = {https://www.sciencedirect.com/science/article/pii/S1532046421000964}
 }
 
 @article{STYLIANOU2021114466,
@@ -24,6 +38,7 @@ url = "http://www.sciencedirect.com/science/article/pii/S0957417420311143",
 author = "Nikolaos Stylianou and Ioannis Vlahavas",
 keywords = "Coreference resolution, Neural Networks, Gender Bias, Pronoun resolution, Natural Language Processing, Discourse",
 abstract = "Entity Coreference Resolution is the task of resolving all mentions in a document that refer to the same real world entity and is considered as one of the most difficult tasks in natural language understanding. It is of great importance for downstream natural language processing tasks such as entity linking, machine translation, summarization, chatbots, etc. This work aims to give a detailed review of current progress on solving Coreference Resolution using neural-based approaches. It also provides a detailed appraisal of the datasets and evaluation metrics in the field, as well as the subtask of Pronoun Resolution that has seen various improvements in the recent years. We highlight the advantages and disadvantages of the approaches, the challenges of the task, the lack of agreed-upon standards in the task and propose a way to further expand the boundaries of the field."
+html = {http://www.sciencedirect.com/science/article/pii/S0957417420311143}
 }
 
 @inproceedings{stylianou-vlahavas-2020-e,
@@ -38,6 +53,8 @@ abstract = "Entity Coreference Resolution is the task of resolving all mentions 
     url = "https://www.aclweb.org/anthology/2020.crac-1.1",
     pages = "1--10",
     abstract = "In the last decade, the field of Neural Language Modelling has witnessed enormous changes, with the development of novel models through the use of Transformer architectures. However, even these models struggle to model long sequences due to memory constraints and increasing computational complexity. Coreference annotations over the training data can provide context far beyond the modelling limitations of such language models. In this paper we present an extension over the Transformer-block architecture used in neural language models, specifically in GPT2, in order to incorporate entity annotations during training. Our model, GPT2E, extends the Transformer layers architecture of GPT2 to Entity-Transformers, an architecture designed to handle coreference information when present. To that end, we achieve richer representations for entity mentions, with insignificant training cost. We show the comparative model performance between GPT2 and GPT2E in terms of Perplexity on the CoNLL 2012 and LAMBADA datasets as well as the key differences in the entity representations and their effects in downstream tasks such as Named Entity Recognition. Furthermore, our approach can be adopted by the majority of Transformer-based language models.",
+    code={https://github.com/nstylia/},
+    html = {https://www.aclweb.org/anthology/2020.crac-1.1}
 }
 
 @article{STYLIANOU2020101949,
@@ -51,7 +68,9 @@ doi = "https://doi.org/10.1016/j.artmed.2020.101949",
 url = "http://www.sciencedirect.com/science/article/pii/S0933365720301986",
 author = "Nikolaos Stylianou and Gerasimos Razis and Dimitrios G. Goulis and Ioannis Vlahavas",
 keywords = "Evidence Based Medicine, PICO, Machine learning, Neural networks, Natural Language Processing",
-abstract = "Evidence-Based Medicine (EBM) has been an important practice for medical practitioners. However, as the number of medical publications increases dramatically, it is becoming extremely difficult for medical experts to review all the contents available and make an informative treatment plan for their patients. A variety of frameworks, including the PICO framework which is named after its elements (Population, Intervention, Comparison, Outcome), have been developed to enable fine-grained searches, as the first step to faster decision making. In this work, we propose a novel entity recognition system that identifies PICO entities within medical publications and achieves state-of-the-art performance in the task. This is achieved by the combination of four 2D Convolutional Neural Networks (CNNs) for character feature extraction, and a Highway Residual connection to facilitate deep Neural Network architectures. We further introduce a PICO Statement classifier, that identifies sentences that not only contain all PICO entities but also answer questions stated in PICO. To facilitate this task we also introduce a high quality dataset, manually annotated by medical practitioners. With the combination of our proposed PICO Entity Recognizer and PICO Statement classifier we aim to advance EBM and enable its faster and more accurate practice."
+abstract = "Evidence-Based Medicine (EBM) has been an important practice for medical practitioners. However, as the number of medical publications increases dramatically, it is becoming extremely difficult for medical experts to review all the contents available and make an informative treatment plan for their patients. A variety of frameworks, including the PICO framework which is named after its elements (Population, Intervention, Comparison, Outcome), have been developed to enable fine-grained searches, as the first step to faster decision making. In this work, we propose a novel entity recognition system that identifies PICO entities within medical publications and achieves state-of-the-art performance in the task. This is achieved by the combination of four 2D Convolutional Neural Networks (CNNs) for character feature extraction, and a Highway Residual connection to facilitate deep Neural Network architectures. We further introduce a PICO Statement classifier, that identifies sentences that not only contain all PICO entities but also answer questions stated in PICO. To facilitate this task we also introduce a high quality dataset, manually annotated by medical practitioners. With the combination of our proposed PICO Entity Recognizer and PICO Statement classifier we aim to advance EBM and enable its faster and more accurate practice.",
+code = {https://github.com/nstylia/pico_entities},
+html = {http://www.sciencedirect.com/science/article/pii/S0933365720301986}
 }
 
 @misc{stylianou2019neural,
@@ -61,6 +80,7 @@ abstract = "Evidence-Based Medicine (EBM) has been an important practice for med
       eprint={1910.09329},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
+      arxiv = {1910.09329}
 }
 
 @inproceedings{10.1145/3200947.3201052,
@@ -79,4 +99,6 @@ numpages = {4},
 keywords = {Real Time Classification, Sentiment Analysis, Location Inference, Social Media Analytics},
 location = {Patras, Greece},
 series = {SETN '18},
+code = {https://github.com/dimichai/airsent},
+html = {https://doi.org/10.1145/3200947.3201052},
 }
