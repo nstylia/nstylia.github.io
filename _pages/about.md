@@ -2,23 +2,20 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: nstylia.jpg
+
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am a PhD candidate at [Aristotle University of Thessaloniki](https://www.csd.auth.gr/en/) affiliated with the [Intelligent Systems Lab @AUTH](https://intelligence.csd.auth.gr/), under the supervision of [Ioannis Vlahavas](https://intelligence.csd.auth.gr/people/vlahavas/).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Previously, I received my B.S. in Computer Science from [University of Essex](https://www.essex.ac.uk/departments/computer-science-and-electronic-engineering) in 2014 and my M.S. in Big Data and Text Analytics from [University of Essex](https://www.essex.ac.uk/departments/computer-science-and-electronic-engineering) in 2015, where I worked with [Udo Kruschwitz](https://scholar.google.com/citations?user=ZCaIF_wAAAAJ&hl=en) and [Massimo Poesio](https://scholar.google.com/citations?user=89aa1X0AAAAJ&hl=en). 
+
+My research interests include Natural Language Processing, Language Modelling and Coreference Resolution. If you are an undergrad interested in these areas or machine learning research in general, feel free to reach out to me. 
