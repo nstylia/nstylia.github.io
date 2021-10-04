@@ -5,7 +5,7 @@ permalink: /
 
 profile:
   align: right
-  image: nstylia_page.jpeg
+  image: nstylia_page_zoomed.jpeg
 
 
 news: true  # includes a list of news items
