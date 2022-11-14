@@ -1,5 +1,6 @@
 {% if site.email %}<a href="mailto:{{ site.email | encode_email }}"><i class="fas fa-envelope"></i></a>{% endif %}
 {% if site.twitter_username %}<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>{% endif %}
+{% if site.mastodon_profile %}<a href="{{ site.mastodon_profile }}" target="_blank" title="Mastodon"><i class="fab fa-mastodon"></i></a>{% endif %}
 {% if site.scholar_userid %}<a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
 {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>{% endif %}
 {% if site.semantic_scholar_userid %}<a href="https://www.semanticscholar.org/author/{{ site.semantic_scholar_userid }}" target="_blank" title="GitHub"><i class="ai ai-semantic-scholar"></i></a>{% endif %}

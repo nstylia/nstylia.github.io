@@ -41,7 +41,8 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: nstylia 
 gitlab_username: # your GitLab user name
 twitter_username: nstylia 
-linkedin_username: stylnikos 
+linkedin_username: stylnikos
+mastodon_profile: https://sigmoid.social/@nstylia 
 scholar_userid: l1IYDIUAAAAJ
 semantic_scholar_userid: #Nikolaos-Stylianou/51050433
 dblp_id: #222/6311
