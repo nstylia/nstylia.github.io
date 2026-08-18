@@ -1,0 +1,95 @@
+  /* Palette: gake tokens — stone grays carry the page, coral (#D85A30) is the
+     wanderer, amber (#EF9F27) is the seam. Coral appears exactly twice per view:
+     the subhead and the gake link. Light mode uses darkened same-hue variants
+     for WCAG contrast; dark mode uses the true brand hexes. */
+  :root {
+    --bg: #faf9f6;
+    --ink: #2e2d2a;
+    --muted: #888780;
+    --seam: #a9700a;
+    --seam-soft: #ef9f2726;
+    --wanderer: #c24b24;
+    --rule: #e3e1da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --ink: #dad8cf;
+      --muted: #8f8e87;
+      --seam: #ef9f27;
+      --seam-soft: #ef9f2726;
+      --wanderer: #d85a30;
+      --rule: #2e2d29;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 41rem; margin: 0 auto; padding: 5rem 1.25rem 6rem; }
+
+  /* ---- Header ---- */
+  .hd { display: flex; gap: 1.75rem; align-items: center; justify-content: space-between; margin-bottom: 2.25rem; }
+  .hd img { width: 118px; height: 118px; flex-shrink: 0; }
+  @media (max-width: 480px) { .hd { flex-direction: column-reverse; align-items: flex-start; } }
+
+  h1 { font-size: 2.6rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; margin: 0 0 0.4rem; }
+  .subhead { color: var(--wanderer); font-size: 1.05rem; font-weight: 600; margin: 0; font-family: ui-sans-serif, system-ui, sans-serif; letter-spacing: 0.01em; }
+
+  /* PHOTO — warm-mono by default, full color on hover.
+     Permanent full color: change class="portrait" to class="portrait color"
+     on the <img> below. That is the entire toggle. */
+  .portrait {
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(1) sepia(0.12) contrast(0.98);
+    transition: filter 0.35s ease;
+  }
+  .portrait:hover { filter: none; }
+  .portrait.color { filter: none; }
+  @media (prefers-reduced-motion: reduce) { .portrait { transition: none; } }
+
+  /* ---- Icon row ---- */
+  .iconrow { display: flex; gap: 1.1rem; align-items: center; margin-top: 0.9rem; }
+  .iconrow a { color: var(--muted); text-decoration: none; display: inline-flex; }
+  .iconrow a:hover, .iconrow a:focus-visible { color: var(--seam); }
+  .iconrow svg { width: 21px; height: 21px; fill: currentColor; }
+
+  h2 {
+    font-size: 0.8rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--seam); border-top: 1px solid var(--rule); padding-top: 2rem; margin: 3rem 0 1rem;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+  p { margin: 0 0 1rem; }
+  a { color: var(--seam); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--seam-soft); }
+  a:hover { text-decoration-color: var(--seam); }
+
+  /* gake — wanderer coral, matching the subhead (second and last coral). */
+  a.gake { color: var(--wanderer); font-weight: 600; text-decoration-color: #d85a3040; }
+  a.gake:hover { text-decoration-color: var(--wanderer); }
+
+  ul.interests { list-style: none; padding: 0; margin: 0; }
+  ul.interests li { margin-bottom: 0.85rem; padding-left: 1rem; border-left: 2px solid var(--seam); }
+  ul.interests b { color: var(--ink); }
+
+  ul.pubs { list-style: none; padding: 0; margin: 0; }
+  ul.pubs li { margin-bottom: 1.1rem; }
+  ul.pubs b { font-weight: 700; }
+  ul.pubs a { color: inherit; text-decoration-color: var(--seam-soft); }
+  ul.pubs a:hover { color: var(--seam); text-decoration-color: var(--seam); }
+  .venue { color: var(--muted); font-size: 0.9rem; display: block; }
+  .venue .yr { color: var(--seam); font-weight: 600; }
+
+  dl.news { margin: 0; }
+  dl.news dt { float: left; clear: left; width: 4.5rem; color: var(--seam); font-weight: 600; font-size: 0.85rem; padding-top: 0.2rem; font-family: ui-sans-serif, system-ui, sans-serif; }
+  dl.news dd { margin: 0 0 0.75rem 5.5rem; }
+  @media (max-width: 480px) {
+    dl.news dt { float: none; width: auto; }
+    dl.news dd { margin-left: 0; margin-bottom: 1rem; }
+    h1 { font-size: 2.1rem; }
+  }
+  footer { margin-top: 4rem; border-top: 1px solid var(--rule); padding-top: 1.25rem; color: var(--muted); font-size: 0.85rem; }
